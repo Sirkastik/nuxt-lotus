@@ -1,0 +1,86 @@
+{
+  "recommended": [
+    {
+      "name": "queen-bed",
+      "url": "https://images.unsplash.com/photo-1638840992956-142399e7e2df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+      "price": 65000,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint possimus voluptates veritatis, delectus laboriosam illo officiis consequuntur eius error voluptate.",
+      "category": ["bedroom"],
+      "id": "rkjj4Djrggf"
+    },
+    {
+      "name": "dining-set",
+      "url": "https://images.unsplash.com/photo-1616628198434-72867dbf467a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2lkZSUyMHRhYmxlfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "price": 15000,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint possimus voluptates veritatis, delectus laboriosam illo officiis consequuntur eius error voluptate.",
+      "category": ["dining-room"],
+      "id": "ejfk344cwca43"
+    },
+    {
+      "name": "patio-chairs",
+      "url": "https://images.unsplash.com/photo-1629296886122-192cc00e5564?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+      "price": 40000,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint possimus voluptates veritatis, delectus laboriosam illo officiis consequuntur eius error voluptate.",
+      "category": ["outdoor"],
+      "id": "fwei4r9ewoUIS"
+    },
+    {
+      "name": "white-sofa",
+      "url": "https://images.unsplash.com/photo-1645527898423-a9654db8d29a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+      "price": 85000,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint possimus voluptates veritatis, delectus laboriosam illo officiis consequuntur eius error voluptate.",
+      "category": ["living-room"],
+      "id": "dk98CDIj88d"
+    },
+    {
+      "name": "mountable-bathroom-cabinets",
+      "url": "https://images.unsplash.com/photo-1595515106880-aa5c54392847?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=528&q=80",
+      "price": 81000,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint possimus voluptates veritatis, delectus laboriosam illo officiis consequuntur eius error voluptate.",
+      "category": ["bathroom"],
+      "id": "ef4IdvcdD8"
+    }
+  ],
+  "bestSell": [
+    {
+      "name": "coffee-table",
+      "url": "https://images.unsplash.com/photo-1575501265797-84adeba79369?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+      "price": 32000,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint possimus voluptates veritatis, delectus laboriosam illo officiis consequuntur eius error voluptate.",
+      "category": ["living-room"],
+      "id": "r8dcr8DSYy"
+    },
+    {
+      "name": "oak-office-cabinet",
+      "url": "https://images.unsplash.com/photo-1616464916172-551a9cf544bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=541&q=80",
+      "price": 57000,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint possimus voluptates veritatis, delectus laboriosam illo officiis consequuntur eius error voluptate.",
+      "category": ["other"],
+      "id": "ikEsC32Dnds"
+    },
+    {
+      "name": "blue-sofa",
+      "url": "https://images.unsplash.com/photo-1630585308572-f53438fc684f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzIzfHxmdXJuaXR1cmUlMjBraXRjaGVufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "price": 17000,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint possimus voluptates veritatis, delectus laboriosam illo officiis consequuntur eius error voluptate.",
+      "category": ["living-room"],
+      "id": "kwOID74edc"
+    },
+    {
+      "name": "japanese-style-dining",
+      "url": "https://images.unsplash.com/photo-1618377385011-b861fcfb18f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=926&q=80",
+      "price": 58000,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint possimus voluptates veritatis, delectus laboriosam illo officiis consequuntur eius error voluptate.",
+      "category": ["dining"],
+      "id": "fsDdije843"
+    },
+    {
+      "name": "reading-chair-with-lamp",
+      "url": "https://images.unsplash.com/photo-1615737986496-1d36ad26ae51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+      "price": 12000,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint possimus voluptates veritatis, delectus laboriosam illo officiis consequuntur eius error voluptate.",
+      "category": ["kitchen"],
+      "id": "ldeSh8Uc7cDN"
+    }
+  ]
+}
