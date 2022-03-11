@@ -1,22 +1,27 @@
 <template>
-  <div class="conte relative pb-80">
+  <div class="conte relative pb-4 sm:pb-36 md:pb-80">
     <div
-      class="h-[82vh] w-full bg-cover bg-center bg-no-repeat brightness-50"
+      class="h-[30vh] md:h-[82vh] w-full bg-cover bg-center bg-no-repeat"
       :style="{ backgroundImage: `url(${url})` }"
     ></div>
     <div
-      class="link absolute left-0 right-0 top-0 flex flex-col gap-4 items-center pt-24"
+      class="link absolute left-0 right-0 top-0 bottom-4 sm:bottom-[32%] flex flex-col gap-4 items-center pt-16 md:pt-32 bg-[#00000073]"
     >
-      <h2 class="font-bold text-[5rem] text-white">Featured Products</h2>
+      <h2 class="font-bold text-3xl md:text-[5rem] md:pb-8 text-white">
+        Featured Products
+      </h2>
       <button
-        class="px-10 py-2 bg-[#111828] text-gray-300 text-lg font-semibold rounded shadow-md"
+        class="px-6 md:px-10 py-2 bg-[#111828] text-gray-200 hover:text-white md:text-lg font-semibold rounded shadow-md"
       >
         Shop Now
       </button>
     </div>
-    <div class="prods absolute top-[43%] left-0 right-0 px-24 flex gap-10">
+    <div
+      class="prods absolute top-[43%] left-0 right-0 px-8 lg:px-24 flex gap-10"
+    >
       <div
-        class="prod h-[70vh] flex-1 bg-cover bg-center bg-no-repeat rounded-lg shadow-lg"
+        class="prod h-[25vh] md:h-[60vh] hidden lg:block flex-1 bg-cover bg-center bg-no-repeat rounded-lg shadow-lg"
+        :class="{ 'sm:block': index !== 2 }"
         v-for="(item, index) in prods"
         :key="index"
         :style="{ backgroundImage: `url(${item.src})` }"

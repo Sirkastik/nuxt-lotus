@@ -1,7 +1,7 @@
 <template>
-  <div class="w-full flex flex-col text-gray-50 bg-[#111828] shadow-md">
+  <div class="w-full flex flex-col text-gray-50 bg-[#111828] shadow-md sticky top-0 z-10">
     <div
-      class="row w-full py-2 border-b-2 flex justify-between px-6 text-sm text-gray-300 font-medium"
+      class="row w-full py-2 border-b-2 hidden md:flex justify-between px-6 text-sm text-gray-300 font-medium"
     >
       <div class="flex gap-1 items-center">
         <span>KSH</span><span><chevron-down-icon /></span>
@@ -23,7 +23,7 @@
         <span class="font-bold text-xl text-[#111828]">lotus</span>
       </div>
       <div
-        class="categories flex items-center gap-8 font-semibold text-gray-500"
+        class="categories hidden md:flex items-center gap-8 font-semibold text-gray-500"
       >
         <div
           v-for="(category, index) in categories"
@@ -92,7 +92,7 @@
         <span class="cursor-pointer" @click="showSearchModal"
           ><SearchIcon
         /></span>
-        <span class="cursor-pointer"><CartIcon /></span>
+        <span class="cursor-pointer hidden md:inline"><CartIcon /></span>
       </div>
     </div>
   </div>

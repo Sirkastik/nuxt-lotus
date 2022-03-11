@@ -1,10 +1,10 @@
 <template>
   <div
-    class="w-full h-full pt-[6vh] flex flex-col items-center justify-center gap-2"
+    class="w-full h-full md:pt-[6vh] px-5 md:px-96 py-6 md:py-10 flex flex-col gap-2"
     @click="hide"
   >
     <div
-      class="py-1 pl-1 pr-3 rounded-md shadow-sm w-[40rem] flex items-center gap-1 bg-gray-100"
+      class="py-1 pl-1 pr-3 rounded-md shadow-sm flex items-center gap-1 bg-gray-100"
       @click.stop=""
     >
       <input
