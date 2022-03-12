@@ -24,6 +24,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/pwa',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -44,6 +45,9 @@ export default {
   pwa: {
     manifest: {
       lang: 'en',
+      name: 'Lotus Furniture',
+      short_name: 'Lotus',
+      theme_color: '#111828'
     },
   },
 
