@@ -1,7 +1,11 @@
 <template>
   <div class="row px-4 w-full" :style="`--order: ${index}`">
-    <div class="top flex md:flex-col justify-between md:justify-start items-center gap-6 my-2 md:my-6">
-      <span class="md:text-2xl font-bold text-[#111828] opacity-90 tracking-wide">
+    <div
+      class="top flex md:flex-col justify-between md:justify-start items-center gap-6 my-2 md:my-6"
+    >
+      <span
+        class="md:text-2xl font-bold text-[#111828] opacity-90 tracking-wide"
+      >
         {{ title }} Products
       </span>
       <span

@@ -2,6 +2,7 @@
   <div
     class="product min-w-[30vw] md:min-w-0 flex-1 cursor-pointer"
     :style="`--order: ${index}`"
+    @click="showProductModal"
   >
     <img
       class="w-full aspect-square rounded shadow overflow-hidden"
@@ -22,13 +23,11 @@
 </template>
 
 <script>
+import ProductModal from './ProductModal.vue'
 export default {
   props: ['product', 'index'],
-  created() {},
+  components: { ProductModal },
   computed: {
-    url() {
-      return require(`../assets/img/${this.product.name}.webp`)
-    },
     productName() {
       return this.product.name.split('-').join(' ')
     },
@@ -36,6 +35,12 @@ export default {
       let arr = this.product.price.toString().split('')
       arr.splice(-3, 0, ',')
       return arr.join('')
+    },
+  },
+  methods: {
+    showProductModal() {
+      this.$store.dispatch('product/setProduct', this.product)
+      this.$store.dispatch('modal/popModal', ProductModal)
     },
   },
 }

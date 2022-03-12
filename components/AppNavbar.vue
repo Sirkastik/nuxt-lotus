@@ -1,5 +1,7 @@
 <template>
-  <div class="w-full flex flex-col text-gray-50 bg-[#111828] shadow-md sticky top-0 z-10">
+  <div
+    class="w-full flex flex-col text-gray-50 bg-[#111828] shadow-md sticky top-0 z-10"
+  >
     <div
       class="row w-full py-2 border-b-2 hidden md:flex justify-between px-6 text-sm text-gray-300 font-medium"
     >
@@ -89,10 +91,12 @@
         </div>
       </div>
       <div class="right flex gap-3 items-center text-2xl">
-        <span class="cursor-pointer" @click="showSearchModal"
-          ><SearchIcon
-        /></span>
-        <span class="cursor-pointer hidden md:inline"><CartIcon /></span>
+        <span class="cursor-pointer" @click="showSearchModal">
+          <SearchIcon />
+        </span>
+        <span class="cursor-pointer hidden md:inline" @click="showCartModal">
+          <CartIcon />
+        </span>
       </div>
     </div>
   </div>
@@ -104,8 +108,9 @@ import SearchIcon from './icons/SearchIcon.vue'
 import CartIcon from './icons/CartIcon.vue'
 import { categoryList } from '~/store/categories'
 import SearchModal from './SearchModal.vue'
+import CartModal from './CartComponent.vue'
 export default {
-  components: { ChevronDownIcon, SearchIcon, CartIcon, SearchModal },
+  components: { ChevronDownIcon, SearchIcon, CartIcon, SearchModal, CartModal },
   data() {
     return {
       categories: null,
@@ -118,6 +123,9 @@ export default {
   methods: {
     showSearchModal() {
       this.$store.dispatch('modal/popModal', SearchModal)
+    },
+    showCartModal() {
+      this.$store.dispatch('modal/popModal', CartModal)
     },
   },
 }

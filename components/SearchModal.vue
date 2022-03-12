@@ -1,10 +1,11 @@
 <template>
   <div
-    class="w-full h-full md:pt-[6vh] px-5 md:px-96 py-6 md:py-10 flex flex-col gap-2"
+    class="w-full h-full md:pt-[6vh] px-5 sm:px-20 lg:px-96 py-6 md:py-10 flex flex-col gap-2"
     @click="hide"
   >
     <div
-      class="py-1 pl-1 pr-3 rounded-md shadow-sm flex items-center gap-1 bg-gray-100"
+      class="py-1 pl-1 pr-3 rounded-md shadow-sm flex items-center gap-1 bg-gray-100 transition-all ease-linear duration-200"
+      :class="{ '-translate-y-16': !show }"
       @click.stop=""
     >
       <input
@@ -20,9 +21,6 @@
       />
       <LoadingIcon class="text-lg" v-else />
     </div>
-    <!-- <div class="border border-[#111828] shadow-sm rounded w-[40rem] h-[60vh] grid place-content-center bg-gray-100">
-      Searching...
-    </div> -->
   </div>
 </template>
 
@@ -34,14 +32,19 @@ export default {
   data() {
     return {
       searchQuery: null,
+      show: false,
     }
   },
   mounted() {
     this.$refs.searchRef.focus()
+    this.show = true
   },
   methods: {
     hide() {
-      this.$store.dispatch('modal/hideModal')
+      this.show = false
+      setTimeout(() => {
+        this.$store.dispatch('modal/hideModal')
+      }, 200)
     },
   },
 }

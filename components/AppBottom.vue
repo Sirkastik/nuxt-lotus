@@ -9,7 +9,7 @@
     <button class="btn pointer" @click="navigate('/')">
       <CategoryIcon />
     </button>
-    <button class="btn pointer" @click="navigate('/')">
+    <button class="btn pointer" @click="showCartModal">
       <CartIcon />
     </button>
   </div>
@@ -19,10 +19,14 @@
 import HomeIcon from './icons/HomeIcon.vue'
 import CategoryIcon from './icons/CategoryIcon.vue'
 import CartIcon from './icons/CartIcon.vue'
+import CartModal from './CartComponent.vue'
 export default {
   methods: {
     navigate(route) {
       this.$router.push(route)
+    },
+    showCartModal() {
+      this.$store.dispatch('modal/popModal', CartModal)
     },
   },
   components: {

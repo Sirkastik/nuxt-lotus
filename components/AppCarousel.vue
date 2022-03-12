@@ -52,15 +52,15 @@ export default {
       return [
         {
           title: 'New Arrivals',
-          url: require('../assets/img/pic1.webp'),
+          url: 'https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80',
         },
         {
           title: 'New Arrivals',
-          url: require('../assets/img/pic2.webp'),
+          url: 'https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80',
         },
         {
           title: 'Discounted',
-          url: require('../assets/img/pic3.webp'),
+          url: 'https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80',
         },
       ]
     },
