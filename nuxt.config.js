@@ -11,8 +11,6 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  target: 'static',
-
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['~/assets/styles.css'],
 
@@ -54,7 +52,6 @@ export default {
       name: 'Lotus Furniture',
       short_name: 'Lotus',
       theme_color: '#111828',
-      start_url: '.',
     },
   },
 
