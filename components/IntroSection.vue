@@ -7,10 +7,13 @@
     <div
       class="link absolute left-0 right-0 top-0 bottom-4 sm:bottom-[32%] flex flex-col gap-4 items-center pt-16 md:pt-32 bg-[#00000073]"
     >
-      <h2 class="font-bold text-3xl md:text-[5rem] md:pb-8 text-white">
+      <h2
+        class="font-bold text-3xl md:text-[5rem] md:pb-8 text-white"
+      >
         Featured Products
       </h2>
       <button
+        @click="$router.push('/categories/featured')"
         class="px-6 md:px-10 py-2 bg-[#111828] text-gray-200 hover:text-white md:text-lg font-semibold rounded shadow-md"
       >
         Shop Now

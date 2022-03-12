@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full flex flex-col text-gray-50 bg-[#111828] shadow-md sticky top-0 z-10"
+    class="w-full flex flex-col text-gray-50 bg-[#111828] shadow-lg sticky top-0 z-10"
   >
     <div
       class="row w-full py-2 border-b-2 hidden md:flex justify-between px-6 text-sm text-gray-300 font-medium"
@@ -14,15 +14,15 @@
       </div>
     </div>
     <div
-      class="row bg-white text-[#111828] py-4 flex justify-between items-center px-8 relative"
+      class="row bg-white text-[#111828] py-3 md:py-4 flex justify-between items-center px-8 relative"
     >
-      <div class="h-6 flex items-center gap-2">
+      <div class="h-5 md:h-6 flex items-center gap-2">
         <img
-          src="~/assets/logo-dark.png"
-          class="h-6 aspect-square"
+          src="~/assets/logo.png"
+          class="h-4 md:h-[1.1rem] aspect-square"
           alt="logo"
         />
-        <span class="font-bold text-xl text-[#111828]">lotus</span>
+        <span class="font-bold text-xl text-[#111828] opacity-80">Lotus</span>
       </div>
       <div
         class="categories hidden md:flex items-center gap-8 font-semibold text-gray-500"
@@ -38,6 +38,14 @@
             :class="{
               ' bg-gray-800 text-gray-200': dropdown === category.name,
             }"
+            @click="
+              $router.push({
+                name: 'categories-id',
+                params: {
+                  id: `${category.name.toLowerCase().split(' ').join('-')}`,
+                },
+              })
+            "
           >
             {{ category.name }}
           </div>
@@ -90,7 +98,7 @@
           </div>
         </div>
       </div>
-      <div class="right flex gap-3 items-center text-2xl">
+      <div class="right flex gap-3 items-center text-lg md:text-2xl">
         <span class="cursor-pointer" @click="showSearchModal">
           <SearchIcon />
         </span>

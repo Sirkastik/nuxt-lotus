@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full h-full md:pt-[6vh] px-5 sm:px-20 lg:px-96 py-6 md:py-10 flex flex-col gap-2"
+    class="w-full h-full pt-16 md:pt-[6vh] px-5 sm:px-20 lg:px-96 py-6 md:py-10 flex flex-col gap-2"
     @click="hide"
   >
     <div

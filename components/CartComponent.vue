@@ -1,7 +1,7 @@
 <template>
   <div class="w-full h-full flex flex-col" @click="hide">
     <div
-      class="bg-gray-100 h-full ml-auto w-full sm:w-1/2 md:w-1/3 px-8 py-8 shadow-lg flex flex-col gap-4 text-[#111828] transition-all duration-500"
+      class="bg-gray-100 h-full ml-auto w-full sm:w-1/2 md:w-1/3 p-3 md:px-8 md:py-8 shadow-lg flex flex-col gap-4 text-[#111828] transition-all duration-500"
       :class="{ 'translate-x-full scale-50': !show }"
       @click.stop=""
     >

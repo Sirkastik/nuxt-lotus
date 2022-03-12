@@ -10,6 +10,12 @@
       </span>
       <span
         class="more text-sm md:text-base pointer md:bg-[#111828] md:text-gray-200 rounded-sm md:px-6 md:py-1 cursor-pointer hover:font-medium md:hover:shadow-md"
+        @click="
+          $router.push({
+            name: 'categories-id',
+            params: { id: `${title.toLowerCase().split(' ').join('-')}` },
+          })
+        "
       >
         View Collection
       </span>

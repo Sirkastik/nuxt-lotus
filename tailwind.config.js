@@ -6,7 +6,12 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx,vue}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+        'spin-reverse': 'spin 3s linear infinite reverse',
+      },
+    },
   },
   plugins: [require('@tailwindcss/forms')],
 }
