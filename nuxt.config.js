@@ -11,6 +11,8 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
+  target: 'static',
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['~/assets/styles.css'],
 
@@ -43,11 +45,16 @@ export default {
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
+    meta: {
+      title: 'Lotus',
+      author: 'dev_rio',
+    },
     manifest: {
       lang: 'en',
       name: 'Lotus Furniture',
       short_name: 'Lotus',
-      theme_color: '#111828'
+      theme_color: '#111828',
+      start_url: '.',
     },
   },
 
