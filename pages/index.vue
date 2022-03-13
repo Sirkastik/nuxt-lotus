@@ -2,7 +2,7 @@
   <div>
     <app-navbar />
     <intro-section />
-    <div class="md:px-8 lg:px-32 pb-10 md:pb-20">
+    <div class="md:px-8 lg:px-32 pb-[10vh] md:pb-20">
       <product-row :products="db.recommended" title="Recommended" index="0" />
       <product-row :products="db.bestSell" title="Best Selling" index="1" />
     </div>

@@ -16,7 +16,10 @@
     <div
       class="row bg-white text-[#111828] py-3 md:py-4 flex justify-between items-center px-8 relative"
     >
-      <div class="h-5 md:h-6 flex items-center gap-2">
+      <div
+        class="h-5 md:h-6 flex items-center gap-2 cursor-pointer"
+        @click="$router.push('/')"
+      >
         <img
           src="~/assets/logo.png"
           class="h-4 md:h-[1.1rem] aspect-square"

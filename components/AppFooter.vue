@@ -49,9 +49,10 @@
         <p>
           The latest news, articles, and resources, sent to your inbox weekly
         </p>
-        <div class="input flex gap-6 py-4">
+        <form class="input flex gap-6 py-4" @submit.prevent="handleSubmit">
           <input
-            type="text"
+            type="email"
+            v-model="email"
             placeholder="Enter you email address"
             class="focus:ring-blue-600 focus:border-blue-600 w-full text-gray-800 shadow-sm sm:text-sm border-gray-300 rounded-md"
           />
@@ -60,7 +61,7 @@
           >
             Subscribe
           </button>
-        </div>
+        </form>
       </div>
     </div>
     <div
@@ -77,5 +78,16 @@ import InstagramIcon from './icons/InstagramIcon.vue'
 import TwitterIcon from './icons/TwitterIcon.vue'
 export default {
   components: { FacebookIcon, InstagramIcon, TwitterIcon },
+  data() {
+    return {
+      email: null,
+    }
+  },
+  methods: {
+    handleSubmit() {
+      console.log({ email: this.email })
+      // storeApi.subscribeToNewsletter({ email: this.email })
+    },
+  },
 }
 </script>

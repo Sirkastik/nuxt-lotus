@@ -104,12 +104,12 @@ export default {
 
   methods: {
     handleSubmit() {
-      const creds = {
+      const credentials = {
         email: this.email,
         password: this.password,
         username: this.username,
       }
-      console.log(creds)
+      console.log({ credentials })
       this.$router.push('/')
     },
   },

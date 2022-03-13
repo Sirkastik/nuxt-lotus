@@ -96,12 +96,11 @@ export default {
 
   methods: {
     handleSubmit() {
-      const creds = {
+      const credentials = {
         email: this.email,
         password: this.password,
-        remember: this.rememberMe,
       }
-      console.log(creds)
+      console.log({ credentials })
       this.$router.push('/')
     },
   },
